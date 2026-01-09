@@ -1,36 +1,87 @@
-ShoppyGlobe - E-Commerce Application
-A modern, fully-featured e-commerce application built with React, JavaScript, Redux Toolkit, and Vite. ShoppyGlobe demonstrates best practices in web development including state management, routing, responsive design, and performance optimization.
-
+# 🛒 ShoppyGlobe – React E-commerce Application
 Links
-Live Demo: https://demo-react-shoppy-globe.vercel.app/
-GitHub Repository: https://github.com/KiranNamawar/demo-react-shoppy-globe.git
-Tech Stack
-Framework: React 19.2.0
-Build Tool: Vite 7.2.4
-Language: JavaScript
-State Management: Redux Toolkit 2.11.0
-Routing: React Router 7.9.6
-Icons: Lucide React
-Styling: Custom CSS with CSS Variables
-Code Quality: ESLint
-📋 Prerequisites
-Before running this project, make sure you have:
 
-Node.js (v18 or higher)
-npm or yarn package manager
-🛠️ Installation & Setup
-1. Clone the Repository
-git clone https://github.com/KiranNamawar/demo-react-shoppy-globe.git
-cd demo-react-shoppy-globe
-2. Install Dependencies
+GitHub Repository: https://github.com/DeveloperHarshPanchal/ShoppyGlobe_E-commerce
+
+ShoppyGlobe is a basic e-commerce web application built using **React + Vite**.  
+The project demonstrates core React concepts such as component structure, routing, Redux state management, API data fetching, lazy loading, and responsive UI design.
+
+---
+
+## 📌 Project Objective
+
+To build a functional e-commerce application that allows users to:
+- Browse products
+- View product details
+- Add/remove products from cart
+- Manage cart quantities
+- Checkout and place an order
+
+---
+
+## 🚀 Tech Stack
+
+- **React** (with Vite)
+- **Redux Toolkit**
+- **React Router (createBrowserRouter)**
+- **JavaScript (ES6+)**
+- **CSS**
+- **DummyJSON API**
+
+---
+
+- Custom hook (`useFetchProducts`)
+- Error handling for failed API calls
+
+### 🛍️ Cart Functionality (Redux)
+- Add items to cart
+- Remove items from cart
+- Increase/decrease quantity (minimum 1)
+- Centralized cart state using Redux
+
+### 🔍 Search Feature
+- Search products using Redux-managed state
+
+### 🧭 Routing
+- Home (`/`)
+- Product Details (`/product/:id`)
+- Cart (`/cart`)
+- Checkout (`/checkout`)
+- 404 Not Found page for invalid routes
+
+### ⚡ Performance Optimization
+- Code splitting using `React.lazy`
+- `Suspense` for lazy-loaded components
+- Lazy loading for images
+
+### 🎨 Styling
+- Clean and responsive UI
+- Works across different screen sizes
+
+---
+
+## 🧾 Checkout Flow
+
+1. User fills in dummy checkout form
+2. Cart summary is displayed
+3. Clicking **Place Order**:
+ - Shows "Order placed"
+ - Empties the cart
+ - Redirects to Home page
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone <YOUR_GITHUB_REPO_LINK>
+2️⃣ Navigate to Project Folder
+cd shoppyglobe
+
+3️⃣ Install Dependencies
 npm install
-3. Run Development Server
+
+4️⃣ Run the Application
 npm run dev
-The application will start at http://localhost:5173 (or another port if 5173 is in use).
-
-4. Build for Production
-npm run build
-5. Preview Production Build
-npm run preview
-
 
