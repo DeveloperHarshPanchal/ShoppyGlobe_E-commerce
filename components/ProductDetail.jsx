@@ -15,11 +15,7 @@ const ProductDetail = () => {
   return (
     <section className="container product-detail">
       <div className="product-detail-image">
-        <img
-          src={product.thumbnail}
-          alt={product.title}
-          loading="lazy"
-        />
+        <img src={product.thumbnail} alt={product.title} loading="lazy" />
       </div>
       <div className="product-detail-info">
         <h1>{product.title}</h1>
