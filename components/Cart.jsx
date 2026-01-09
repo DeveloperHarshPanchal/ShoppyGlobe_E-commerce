@@ -17,9 +17,9 @@ const Cart = () => {
     return (
       <section className="container cart-page">
         <h1 className="page-title">Your Cart</h1>
-        <p className="muted-text">Your cart is empty.</p>
+        <p className="muted-text">Your cart is empty...</p>
         <Link to="/" className="btn btn-primary">
-          Go to Products
+          Continue Shopping 😀
         </Link>
       </section>
     );

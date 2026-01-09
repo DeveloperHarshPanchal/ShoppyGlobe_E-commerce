@@ -16,14 +16,29 @@ const CartItem = ({ item, onQuantityChange, onRemove }) => {
         </div>
       </div>
       <div className="cart-item-actions">
-        <input
-          type="number"
-          min="1"
-          value={item.quantity}
-          onChange={(e) => onQuantityChange(Number(e.target.value))}
-        />
-        <button className="btn btn-ghost" onClick={onRemove}>
-          Remove
+        <div className="quantity-controls">
+          <button
+            className="btn btn-ghost"
+            onClick={() => onQuantityChange(Math.max(1, item.quantity - 1))}
+            title="Decrease quantity"
+          >
+            −
+          </button>
+          <span className="quantity-display">{item.quantity}</span>
+          <button
+            className="btn btn-ghost"
+            onClick={() => onQuantityChange(item.quantity + 1)}
+            title="Increase quantity"
+          >
+            +
+          </button>
+        </div>
+        <button
+          className="btn btn-ghost"
+          onClick={onRemove}
+          title="Remove item"
+        >
+          🗑️ Remove
         </button>
       </div>
     </div>
