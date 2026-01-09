@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-
 const App = lazy(() => import("../src/App"));
 const ProductList = lazy(() => import("../components/ProductList"));
 const ProductDetail = lazy(() => import("../components/ProductDetail"));
