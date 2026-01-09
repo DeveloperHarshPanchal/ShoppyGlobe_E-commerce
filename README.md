@@ -1,79 +1,87 @@
-A responsive e-commerce frontend built using React, Vite, Redux Toolkit, React Router, and modern UI/UX design patterns.
-This project includes product listing, product details, cart management, checkout flow, state persistence, lazy loading, and clean responsive design.
+# 🛒 ShoppyGlobe – React E-commerce Application
+Links
 
+GitHub Repository: https://github.com/DeveloperHarshPanchal/ShoppyGlobe_E-commerce
 
-Features:
-1. Product Listing Page
+ShoppyGlobe is a basic e-commerce web application built using **React + Vite**.  
+The project demonstrates core React concepts such as component structure, routing, Redux state management, API data fetching, lazy loading, and responsive UI design.
 
-Fetches data from DummyJSON API
+---
 
-Displays products in a responsive grid
+## 📌 Project Objective
 
-Search functionality using Redux state
+To build a functional e-commerce application that allows users to:
+- Browse products
+- View product details
+- Add/remove products from cart
+- Manage cart quantities
+- Checkout and place an order
 
-Lazy-loaded images for performance
+---
 
-2 Product Detail Page
+## 🚀 Tech Stack
 
-Shows full details of a selected product
+- **React** (with Vite)
+- **Redux Toolkit**
+- **React Router (createBrowserRouter)**
+- **JavaScript (ES6+)**
+- **CSS**
+- **DummyJSON API**
 
-Includes brand, category, description, pricing
+---
 
-“Add to Cart” button with Redux integration
+- Custom hook (`useFetchProducts`)
+- Error handling for failed API calls
 
-Error handling & loading states
+### 🛍️ Cart Functionality (Redux)
+- Add items to cart
+- Remove items from cart
+- Increase/decrease quantity (minimum 1)
+- Centralized cart state using Redux
 
-3 Shopping Cart
+### 🔍 Search Feature
+- Search products using Redux-managed state
 
-Add, remove, or update product quantity
+### 🧭 Routing
+- Home (`/`)
+- Product Details (`/product/:id`)
+- Cart (`/cart`)
+- Checkout (`/checkout`)
+- 404 Not Found page for invalid routes
 
-Quantity cannot go below 1
+### ⚡ Performance Optimization
+- Code splitting using `React.lazy`
+- `Suspense` for lazy-loaded components
+- Lazy loading for images
 
-Shows price summary and total amount
+### 🎨 Styling
+- Clean and responsive UI
+- Works across different screen sizes
 
-Fully managed by Redux Toolkit
+---
 
-4 Checkout Page
+## 🧾 Checkout Flow
 
-Simple responsive checkout form
+1. User fills in dummy checkout form
+2. Cart summary is displayed
+3. Clicking **Place Order**:
+ - Shows "Order placed"
+ - Empties the cart
+ - Redirects to Home page
 
-Shows order summary
+---
 
-On submission:
+## 🛠️ Installation & Setup
 
-shows order confirmation
+### 1️⃣ Clone the Repository
+```bash
+git clone <YOUR_GITHUB_REPO_LINK>
+2️⃣ Navigate to Project Folder
+cd shoppyglobe
 
-clears cart
+3️⃣ Install Dependencies
+npm install
 
-redirects to home
+4️⃣ Run the Application
+npm run dev
 
-5 Routing (React Router v6)
-
-/ – Product list
-
-/products/:id – Product details
-
-/cart – Cart page
-
-/checkout – Checkout
-
-404 Not Found page with route error details
-
-6 Performance Features
-
-Code splitting using React.lazy + Suspense
-
-Image lazy-loading
-
-Lightweight, optimized Vite setup
-
-7 Beautiful UI + Responsive Design
-
-Flipkart-inspired UI
-
-Premium footer
-
-Modern buttons, product cards, and layout
-
-
-git hub repo Link ==>
